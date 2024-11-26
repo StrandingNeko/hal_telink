@@ -40,5 +40,5 @@ blobs:
     type: lib
     version: 'V4.0.4.2-WIP'
     license-path: tlsr9/ble/license.txt
-    url: http://wiki.telink-semi.cn/wiki/protocols/Zephyr/binaries/public/tl721x_lib/lib_zephyr_tl721x.a
+    url: http://wiki.telink-semi.cn/wiki/protocols/Zephyr/binaries/public/tl721x_lib/lib_zephyr_tl721x_cc4a84ab75b5797aee031777329559fca067ff4d.a
     description: "Binary libraries supporting Telink TL721X series BLE subsystems"
