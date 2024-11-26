@@ -29,17 +29,17 @@
 #define ACL_STACK_H_
 
 
-#include "stack/ble/ble_common.h"
-#include "stack/ble/ble_stack.h"
-#include "stack/ble/ble_config.h"
-#include "stack/ble/ble_format.h"
+#include "stack/ble/TL721X/ble_common.h"
+#include "stack/ble/TL721X/ble_stack.h"
+#include "stack/ble/TL721X/ble_config.h"
+#include "stack/ble/TL721X/ble_format.h"
 
-#include "stack/ble/controller/ll/ll_stack.h"
-#include "stack/ble/controller/csa/csa_stack.h"
-#include "stack/ble/controller/phy/phy_stack.h"
-#include "stack/ble/hci/hci_stack.h"
-#include "stack/ble/controller/ll/chn_sound/chn_sound_stack.h"
-#include "stack/ble/controller/ll/acl_conn/async_lea/acl_async_stack.h"
+#include "stack/ble/TL721X/controller/ll/ll_stack.h"
+#include "stack/ble/TL721X/controller/csa/csa_stack.h"
+#include "stack/ble/TL721X/controller/phy/phy_stack.h"
+#include "stack/ble/TL721X/hci/hci_stack.h"
+#include "stack/ble/TL721X/controller/ll/chn_sound/chn_sound_stack.h"
+#include "stack/ble/TL721X/controller/ll/acl_conn/async_lea/acl_async_stack.h"
 
 
 /******************************* acl_conn start ******************************************************************/

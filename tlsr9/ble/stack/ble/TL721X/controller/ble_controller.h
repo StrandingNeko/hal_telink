@@ -20,57 +20,59 @@
 
 
 
-#include "stack/ble/ble_common.h"
-#include "stack/ble/ble_format.h"
+#include "stack/ble/TL721X/ble_common.h"
+#include "stack/ble/TL721X/ble_format.h"
 
 
-#include "stack/ble/hci/hci.h"
-#include "stack/ble/hci/hci_const.h"
-#include "stack/ble/hci/hci_cmd.h"
-#include "stack/ble/hci/hci_event.h"
+#include "stack/ble/TL721X/hci/hci.h"
+#include "stack/ble/TL721X/hci/hci_const.h"
+#include "stack/ble/TL721X/hci/hci_cmd.h"
+#include "stack/ble/TL721X/hci/hci_event.h"
 
-#include "stack/ble/controller/ll/ll.h"
-#include "stack/ble/controller/ll/ll_pm.h"
+#include "stack/ble/TL721X/controller/ll/ll.h"
+#include "stack/ble/TL721X/controller/ll/ll_pm.h"
 
-#include "stack/ble/controller/ll/acl_conn/acl_conn.h"
-#include "stack/ble/controller/ll/acl_conn/acl_peripheral.h"
-#include "stack/ble/controller/ll/acl_conn/acl_central.h"
-
-
-#include "stack/ble/controller/ll/adv/adv.h"
-#include "stack/ble/controller/ll/adv/leg_adv.h"
-#include "stack/ble/controller/ll/adv/ext_adv.h"
-
-#include "stack/ble/controller/ll/scan/scan.h"
-#include "stack/ble/controller/ll/scan/leg_scan.h"
-#include "stack/ble/controller/ll/scan/ext_scan.h"
+#include "stack/ble/TL721X/controller/ll/acl_conn/acl_conn.h"
+#include "stack/ble/TL721X/controller/ll/acl_conn/acl_peripheral.h"
+#include "stack/ble/TL721X/controller/ll/acl_conn/acl_central.h"
 
 
-#include "stack/ble/controller/ll/init/init.h"
-#include "stack/ble/controller/ll/init/leg_init.h"
-#include "stack/ble/controller/ll/init/ext_init.h"
+#include "stack/ble/TL721X/controller/ll/adv/adv.h"
+#include "stack/ble/TL721X/controller/ll/adv/leg_adv.h"
+#include "stack/ble/TL721X/controller/ll/adv/ext_adv.h"
+
+#include "stack/ble/TL721X/controller/ll/scan/scan.h"
+#include "stack/ble/TL721X/controller/ll/scan/leg_scan.h"
+#include "stack/ble/TL721X/controller/ll/scan/ext_scan.h"
 
 
-#include "stack/ble/controller/ll/prdadv/pda.h"
-#include "stack/ble/controller/ll/prdadv/prd_adv.h"
-
-#include "stack/ble/controller/ll/prdadv/pda_sync.h"
-
+#include "stack/ble/TL721X/controller/ll/init/init.h"
+#include "stack/ble/TL721X/controller/ll/init/leg_init.h"
+#include "stack/ble/TL721X/controller/ll/init/ext_init.h"
 
 
-#include "stack/ble/controller/whitelist/whitelist.h"
-#include "stack/ble/controller/whitelist/resolvelist.h"
+#include "stack/ble/TL721X/controller/ll/prdadv/pda.h"
+#include "stack/ble/TL721X/controller/ll/prdadv/prd_adv.h"
 
-#include "stack/ble/controller/csa/csa.h"
-#include "stack/ble/controller/phy/phy.h"
-#include "stack/ble/controller/phy/phy_test.h"
+#include "stack/ble/TL721X/controller/ll/prdadv/pda_sync.h"
 
+
+
+#include "stack/ble/TL721X/controller/whitelist/whitelist.h"
+#include "stack/ble/TL721X/controller/whitelist/resolvelist.h"
+
+#include "stack/ble/TL721X/controller/csa/csa.h"
+#include "stack/ble/TL721X/controller/phy/phy.h"
+#include "stack/ble/TL721X/controller/phy/phy_test.h"
+
+
+#include "stack/ble/TL721X/controller/contr_comp.h"
 
 #include "algorithm/algorithm.h"
 
 /*********************************************************/
 //Remove when file merge to SDK //
-#include "stack/ble/ble_config.h"
+#include "stack/ble/TL721X/ble_config.h"
 
 
 /*********************************************************/

@@ -28,7 +28,7 @@
 #ifndef BLE_STACK_H_
 #define BLE_STACK_H_
 
-#include "stack/ble/ble_config.h"
+#include "stack/ble/TL721X/ble_config.h"
 
 
 /**

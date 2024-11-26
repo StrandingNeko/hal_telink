@@ -29,9 +29,9 @@
 #define ACL_SNIFFER_STACK_H_
 
 
-#include "stack/ble/ble_stack.h"
-#include "stack/ble/controller/ll/ll_stack.h"
-#include "stack/ble/controller/ll/acl_conn/acl_stack.h"
+#include "stack/ble/TL721X/ble_stack.h"
+#include "stack/ble/TL721X/controller/ll/ll_stack.h"
+#include "stack/ble/TL721X/controller/ll/acl_conn/acl_stack.h"
 
 
 

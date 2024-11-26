@@ -25,7 +25,7 @@
 #define HCI_VENDOR_H_
 
 
-#include "stack/ble/ble_format.h"
+#include "stack/ble/TL721X/ble_format.h"
 
 #define IUT_HCI_VENDOR_LOG_EN             (1 & IUT_HCI_LOG_EN)
 #define IUT_HCI_VENDOR_WARN_EN            (1 & IUT_HCI_VENDOR_LOG_EN)

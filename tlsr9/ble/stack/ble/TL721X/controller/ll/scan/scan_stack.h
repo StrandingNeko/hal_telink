@@ -28,8 +28,8 @@
 #ifndef SCAN_STACK_H_
 #define SCAN_STACK_H_
 
-#include "stack/ble/hci/hci_cmd.h"
-#include "stack/ble/controller/ll/ll_stack.h"
+#include "stack/ble/TL721X/hci/hci_cmd.h"
+#include "stack/ble/TL721X/controller/ll/ll_stack.h"
 
 
 

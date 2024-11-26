@@ -25,7 +25,7 @@
 #define BLE_FORMAT_H
 
 
-#include "stack/ble/ble_common.h"
+#include "stack/ble/TL721X/ble_common.h"
 
 //data type definitions and formats, used Advertising Data(AD), Scan Response(SRD), Additional Controller Advertising Data(ACAD).
 
@@ -305,6 +305,52 @@ typedef struct __attribute__((packed)) {
 
 }rf_packet_att_data_t;
 
+
+typedef struct {
+    u8 llid   :2;
+    u8 cssn   :3;
+    u8 cstf   :1;
+    u8 rfu0   :2;
+    u8 rf_len;
+}rf_bis_data_hdr_t;
+
+typedef struct {
+    u8 llid   :2;
+    u8 nesn   :1;
+    u8 sn     :1;
+    u8 cie    :1;
+    u8 rfu0   :1;
+    u8 npi    :1;
+    u8 rfu1   :1;
+    u8 rf_len;
+}rf_cis_data_hdr_t;
+
+typedef struct {
+    u8 llid   :2;
+    u8 nesn   :1;
+    u8 sn     :1;
+    u8 md     :1;
+    u8 rfu1   :3;
+    u8 rf_len;
+}rf_acl_data_head_t;
+
+typedef struct __attribute__((packed)) {
+    union{
+        rf_bis_data_hdr_t  bisPduHdr;
+        rf_cis_data_hdr_t  cisPduHdr;
+        rf_acl_data_head_t aclPduHdr;
+        struct __attribute__((packed)) {
+            u8 type;
+            u8 rf_len;
+        }pduHdr;
+    }llPduHdr;        /* LL PDU Header: 2 */
+    u8  llPayload[1]; /* Max LL Payload length: 251 */
+}llPhysChnPdu_t;
+
+typedef struct __attribute__((packed)) {
+    u32 dma_len;
+    llPhysChnPdu_t llPhysChnPdu;
+}rf_packet_ll_data_t;
 
 typedef struct __attribute__((packed)) {
     u8  type;

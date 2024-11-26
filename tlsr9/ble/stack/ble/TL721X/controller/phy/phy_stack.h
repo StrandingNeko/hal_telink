@@ -30,7 +30,7 @@
 
 
 #include "tl_common.h"
-#include "stack/ble/hci/hci_cmd.h"
+#include "stack/ble/TL721X/hci/hci_cmd.h"
 
 
 /******************************* phy start *************************************************************************/

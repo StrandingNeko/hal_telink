@@ -25,7 +25,7 @@
 #define HCI_EVENT_H_
 
 
-#include "stack/ble/ble_common.h"
+#include "stack/ble/TL721X/ble_common.h"
 
 
 /**

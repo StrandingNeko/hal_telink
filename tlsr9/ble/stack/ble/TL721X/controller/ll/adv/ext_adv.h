@@ -24,7 +24,7 @@
 #ifndef LL_EXT_ADV_H_
 #define LL_EXT_ADV_H_
 
-#include "stack/ble/hci/hci_cmd.h"
+#include "stack/ble/TL721X/hci/hci_cmd.h"
 
 
 /* maximum number of advertising sets this SDK can support, periodic advertising is included. */

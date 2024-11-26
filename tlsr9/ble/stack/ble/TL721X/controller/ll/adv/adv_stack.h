@@ -30,11 +30,11 @@
 
 
 
-#include "stack/ble/hci/hci_cmd.h"
-#include "stack/ble/ble_stack.h"
-#include "stack/ble/ble_format.h"
-#include "stack/ble/controller/csa/csa_stack.h"
-#include "stack/ble/controller/whitelist/whitelist_stack.h"
+#include "stack/ble/TL721X/hci/hci_cmd.h"
+#include "stack/ble/TL721X/ble_stack.h"
+#include "stack/ble/TL721X/ble_format.h"
+#include "stack/ble/TL721X/controller/csa/csa_stack.h"
+#include "stack/ble/TL721X/controller/whitelist/whitelist_stack.h"
 
 /******************************* adv start ******************************************************************/
 

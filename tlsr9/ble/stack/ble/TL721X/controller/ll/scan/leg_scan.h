@@ -25,7 +25,7 @@
 #define LLMS_SCAN_H_
 
 
-#include "stack/ble/hci/hci_cmd.h"
+#include "stack/ble/TL721X/hci/hci_cmd.h"
 
 
 /**
