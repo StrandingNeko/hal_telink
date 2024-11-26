@@ -25,7 +25,7 @@
 #define HCI_CMD_H_
 
 
-#include "stack/ble/ble_format.h"
+#include "stack/ble/TL721X/ble_format.h"
 
 
 

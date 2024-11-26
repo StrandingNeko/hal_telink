@@ -24,7 +24,7 @@
 #ifndef LL_SCAN_EXT_H_
 #define LL_SCAN_EXT_H_
 
-#include "stack/ble/hci/hci_cmd.h"
+#include "stack/ble/TL721X/hci/hci_cmd.h"
 
 
 

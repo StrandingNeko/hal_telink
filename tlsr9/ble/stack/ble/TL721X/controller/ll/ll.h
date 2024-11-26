@@ -25,8 +25,8 @@
 #define LL_H_
 
 #include "tl_common.h"
-#include "common/types.h"
-#include "stack/ble/ble_common.h"
+#include "types.h"
+#include "stack/ble/TL721X/ble_common.h"
 
 /**
  * @brief   Telink defined LinkLayer Event Callback

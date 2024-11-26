@@ -25,7 +25,7 @@
 #define _HCI_H_
 
 
-#include "stack/ble/ble_common.h"
+#include "stack/ble/TL721X/ble_common.h"
 
 typedef int (*blc_hci_rx_handler_t) (void);
 typedef int (*blc_hci_tx_handler_t) (void);
